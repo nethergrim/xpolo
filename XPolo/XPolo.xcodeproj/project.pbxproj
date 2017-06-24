@@ -18,6 +18,7 @@
 		551BDF721EFEEAD400C61040 /* XPoloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551BDF711EFEEAD400C61040 /* XPoloTests.swift */; };
 		551BDF7D1EFEEAD400C61040 /* XPoloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551BDF7C1EFEEAD400C61040 /* XPoloUITests.swift */; };
 		5544AED91EFEF832002FF0B0 /* MarketModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5544AED81EFEF832002FF0B0 /* MarketModels.swift */; };
+		55C681641EFF053E0083F74A /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C681631EFF053E0083F74A /* RequestManager.swift */; };
 		C5F76A0772299E729E656CCA /* Pods_XPoloUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B956947D652540C03E042193 /* Pods_XPoloUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		551BDF7C1EFEEAD400C61040 /* XPoloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPoloUITests.swift; sourceTree = "<group>"; };
 		551BDF7E1EFEEAD400C61040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5544AED81EFEF832002FF0B0 /* MarketModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketModels.swift; sourceTree = "<group>"; };
+		55C681631EFF053E0083F74A /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		5DD30B9786E8C1F74D5BEBB7 /* Pods-XPoloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPoloTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPoloTests/Pods-XPoloTests.debug.xcconfig"; sourceTree = "<group>"; };
 		83242457600E22EE2D15EBA1 /* Pods-XPoloTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPoloTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPoloTests/Pods-XPoloTests.release.xcconfig"; sourceTree = "<group>"; };
 		B956947D652540C03E042193 /* Pods_XPoloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XPoloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				5544AED51EFEF7FE002FF0B0 /* models */,
+				55C681631EFF053E0083F74A /* RequestManager.swift */,
 			);
 			name = api;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C681641EFF053E0083F74A /* RequestManager.swift in Sources */,
 				551BDF5F1EFEEAD400C61040 /* SecondViewController.swift in Sources */,
 				5544AED91EFEF832002FF0B0 /* MarketModels.swift in Sources */,
 				551BDF5B1EFEEAD400C61040 /* AppDelegate.swift in Sources */,
