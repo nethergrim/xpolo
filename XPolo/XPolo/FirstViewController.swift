@@ -1,5 +1,4 @@
 //
-//  FirstViewController.swift
 //  XPolo
 //
 //  Created by Андрей Дробязко on 24.06.17.
@@ -8,7 +7,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class MarketsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
