@@ -12,7 +12,8 @@ import ObjectMapper
 
 class Tickers: Mappable {
     
-    var btc_lsk: Ticker
+    var btc_lsk: Ticker?
+    var btc_eth: Ticker?
     
     required init?(map: Map){
         
@@ -20,6 +21,7 @@ class Tickers: Mappable {
     
     func mapping(map: Map) {
         btc_lsk <- map["BTC_LSK"]
+        btc_eth <- map["BTC_ETH"]
     }
     
 }
@@ -28,16 +30,16 @@ class Tickers: Mappable {
 class Ticker: Mappable {
 
 
-    var identifier: Int
-    var last: String
-    var lowestAsk: String
-    var highestBid: String
-    var percentChange: String
-    var baseVolume: String
-    var quoteVolume: String
-    var isFrozen: String
-    var high24hr: String
-    var low24hr: String
+    var identifier: Int?
+    var last: String?
+    var lowestAsk: String?
+    var highestBid: String?
+    var percentChange: String?
+    var baseVolume: String?
+    var quoteVolume: String?
+    var isFrozen: String?
+    var high24hr: String?
+    var low24hr: String?
     
     required init?(map: Map){
         

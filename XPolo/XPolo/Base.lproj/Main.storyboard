@@ -44,6 +44,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Markets" image="ic_show_chart" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="textSmall" destination="A5M-7J-77L" id="zoQ-1K-w12"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
