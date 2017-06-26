@@ -16,11 +16,10 @@ class TickerCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        coin.addCharactersSpacing(spacing: 0.2, text: "ETC")
     }
     
-    public func bind(ticker: Ticker){
-        coin.addCharactersSpacing(spacing: 0.2, text: "ETC")
+    public func bind(ticker: LocalTicker){
+        coin.addCharactersSpacing(spacing: 0.2, text: ticker.primalCoinName)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
