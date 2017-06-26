@@ -24,18 +24,21 @@ PODS:
   - AlamofireObjectMapper (4.1.0):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 2.0)
+  - BFKit-Swift (2.4.1)
   - ObjectMapper (2.2.7)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6)
   - AlamofireObjectMapper (~> 4.0)
+  - BFKit-Swift
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  BFKit-Swift: 7899c3c6ed641e202a5945185826aa4b6ff01099
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
 
-PODFILE CHECKSUM: 36bf9f63b1159d2b7bff60f60027dc8620280319
+PODFILE CHECKSUM: 160408aed738c727fdb35c4392e8474edde8debd
 
 COCOAPODS: 1.2.1

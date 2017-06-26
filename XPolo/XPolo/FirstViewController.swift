@@ -7,17 +7,18 @@
 
 import UIKit
 
-class MarketsViewController: UIViewController {
+class MarketsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var textSmall: UILabel!
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "TickerCell", bundle: nil), forCellReuseIdentifier: "tickerCell")
 
         RequestManager.sharedInstance.getTickers { (tickers: Tickers?, error: Error?) in
-            self.textSmall.text = tickers?.btc_eth?.last
+//            self.textSmall.text = tickers?.btc_eth?.last
         }
 
 
@@ -28,6 +29,25 @@ class MarketsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    // Table View delegates
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section:Int) -> Int {
+        return 20
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tickerCell", for: indexPath as IndexPath)
+
+        
+//        cell.delegate = self
+        return cell
     }
 
 

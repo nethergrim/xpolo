@@ -8,6 +8,7 @@ target 'XPolo' do
   # Pods for XPolo
     pod 'AFNetworking', '~> 2.6'
     pod 'AlamofireObjectMapper', '~> 4.0'
+    pod 'BFKit-Swift'
 
   target 'XPoloTests' do
     inherit! :search_paths
