@@ -53,14 +53,26 @@ struct LocalTickers {
 
 
     static func map(_ tickers: Tickers) -> LocalTickers {
-
         let array = tickers.pairs.map { (ticker: Ticker) -> LocalTicker in
             let firstCoin: String = ticker.pairName.substring(to: ticker.pairName.index(of: "_"))
             let lastCoin: String = ticker.pairName.substring(from: (ticker.pairName.index(of: "_") + 1))
             return LocalTicker(ticker, name: lastCoin, secondaryCoinName: firstCoin, isFavorite: false)
         }
-
         return LocalTickers(tickers: array)
     }
+    
+    
+    
+    static func map(_ tickers: Tickers, filterOnlySecondaryCurrency: String) -> LocalTickers {
+        let tickers = map(tickers).tickers.filter { (ticker: LocalTicker) -> Bool in
+            return ticker.secondaryCoinName == filterOnlySecondaryCurrency
+            }.sorted { (ticker1: LocalTicker, ticker2: LocalTicker) -> Bool in
+                return ticker1.primalCoinName < ticker2.primalCoinName
+            }
+        return LocalTickers(tickers: tickers)
+    }
+
 }
+
+
 

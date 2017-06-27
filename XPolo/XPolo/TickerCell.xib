@@ -78,8 +78,11 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="change" destination="nTt-Lp-D1R" id="rsD-ax-Cvs"/>
                 <outlet property="coin" destination="n9d-I8-dip" id="4Ky-i6-G3Q"/>
+                <outlet property="price" destination="KLq-kN-aA4" id="wPJ-Zk-wTn"/>
                 <outlet property="star" destination="mex-ew-G6n" id="e2P-vT-Qzr"/>
+                <outlet property="volume" destination="o0y-f4-3uk" id="fHM-tR-QwF"/>
             </connections>
             <point key="canvasLocation" x="53" y="54"/>
         </tableViewCell>
